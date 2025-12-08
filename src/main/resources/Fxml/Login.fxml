@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.banking.Controller.Login">
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="CENTERED" text="BANKING APPLICATION" wrappingWidth="600.0">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Text>
+            <Text strokeType="CENTERED" text="Welcome to Our Bank" wrappingWidth="600.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Separator prefWidth="200.0" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="250.0" spacing="15.0">
+                     <children>
+                        <Label text="Username:" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="usernameField" prefHeight="40.0" prefWidth="250.0" promptText="Enter your username" />
+                        <Label text="Password:" wrapText="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="passwordField" prefHeight="40.0" prefWidth="250.0" promptText="Enter your password" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#loginAsClient" prefHeight="50.0" prefWidth="150.0" style="-fx-font-size: 14;" text="Login as Client" />
+                  <Button mnemonicParsing="false" onAction="#loginAsAdmin" prefHeight="50.0" prefWidth="150.0" style="-fx-font-size: 14;" text="Login as Admin" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
